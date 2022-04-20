@@ -7,6 +7,8 @@
   (change the hard coded MAX.PER in `index.js` to change the iterations amount)
 
 ## Personal results
+![image](https://user-images.githubusercontent.com/78568641/164183853-0772a6d2-1028-468d-9d5d-55744dc616e7.png)
+
 | name              | time.ms  | time.ops | errors.0                     | errors.1                   | errors.2                     |
 | ----------------- | -------- | -------- | ---------------------------- | -------------------------- | ---------------------------- |
 | klona_json        | 377.382  | 2649832  | Date object wasn't cloned    | Regex object wasn't cloned | Point.toString wasn't cloned |
