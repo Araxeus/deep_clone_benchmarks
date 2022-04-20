@@ -5,7 +5,7 @@ import assert from 'assert';
 const MAX = { PER: 1_000_000 };
 const nanoToMs = n => (Number(n) / 1e6).toFixed(2);
 const nanoToOps = n => Math.round(MAX.PER / (Number(n) / 1e9));
-const prettyNum = n => Number(n).toLocaleString("en-US");
+const prettyNum = n => Number(n).toLocaleString('en-US');
 
 const results = [];
 
@@ -55,7 +55,13 @@ Object.entries(cloners).forEach(([name, cloner]) => {
 results.sort((res1, res2) => res1.time.ms - res2.time.ms);
 
 // json
-console.dir(results.map(r => ({ ...r, time: { ms: prettyNum(r.time.ms), ['op/s']: prettyNum(r.time.ops) } })), { depth: 2 });
+console.dir(
+    results.map(r => ({
+        ...r,
+        time: { ms: prettyNum(r.time.ms), ['op/s']: prettyNum(r.time.ops) }
+    })),
+    { depth: 2 }
+);
 
 // plaintext
 //console.log(results.map(r => `${r.name}: ${r.time.ms}ms ${r.errors ? ', Errors: ' + r.errors : ''}`).join('\n'));
