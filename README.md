@@ -4,7 +4,8 @@
 ## Local benchmark
 * `yarn` to install all dependecies
 * `yarn start` to start the benchmark with the default 1_000_000 iterations
-  (change the hard coded MAX.PER in `index.js` to change the iterations amount)
+
+   (change the hard coded MAX.PER in `index.js` to change the iterations amount)
 
 ## Personal results
 ![image](https://user-images.githubusercontent.com/78568641/164183853-0772a6d2-1028-468d-9d5d-55744dc616e7.png)
