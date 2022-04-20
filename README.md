@@ -11,7 +11,7 @@
 
 ![image](https://user-images.githubusercontent.com/78568641/164192523-16f1200e-aa6d-4665-bc77-076236137034.png)
 
-| name              | time.ms  | time.op/s | errors.0                     | errors.1                   | errors.2                     |
+| name              |    ms    |    op/s   | errors.0                     | errors.1                   | errors.2                     |
 | ----------------- | -------- | --------- | ---------------------------- | -------------------------- | ---------------------------- |
 | klona_json        | 364.01   | 2,747,178 | Date object wasn't cloned    | Regex object wasn't cloned | Point.toString wasn't cloned |
 | fastest_json_Copy | 544.54   | 1,836,408 | Point.toString wasn't cloned | assert.deepEqual error     |                              |
